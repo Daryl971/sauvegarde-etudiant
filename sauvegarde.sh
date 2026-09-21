@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 # ============================================================
 # sauvegarde.sh
 # Usage :
@@ -22,10 +22,10 @@ fi
 PROJET="$(basename "$SOURCE")"
 PARENT="$(dirname "$SOURCE")"
 
-DESTDIR="$HOME/Sauvegardes"
+DESTDIR="$HOME/Documents/Projet"
 mkdir -p "$DESTDIR"
 
-HORODATAGE="$(date +%Y%m%d_%H%M%S)"
+HORODATAGE="$(date +%d%m%Y_%H%M%S)"
 ARCHIVE="$DESTDIR/${USER}_${PROJET}_${HORODATAGE}.tar.zst"
 
 echo "Sauvegarde de $SOURCE vers :"
